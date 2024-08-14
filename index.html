@@ -147,24 +147,21 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action=""  class="contact">
+            <div class="input-group"></div>
+        <form action="https://formsubmit.co/7649c86059b151b51c6b3fa2f4c34c0e" method="POST" class="contact">
             
-            <div class="input-group">
+            
                 <div class="input-box">
-                    <input type="hidden" name="access_key" value="a8859beb-76cd-40e1-86af-d6893f125d62">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="E-mail">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="4"placeholder="Your Message" required></textarea>
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit">Send</button>
                 
             </div>
 
-            <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10"
-                placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-                
-            </div>
+            
         </form>
 
     </section>
